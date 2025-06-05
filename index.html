@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas Providing Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0b3d91;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .hero {
+ background: url('hero-blur.jpg') center/cover no-repeat;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      background-color: rgba(43, 83, 143, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      margin: 0 0.5rem;
+      border: none;
+      background-color: #1b55bb;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+    }
+
+    .btn:hover {
+      background-color: #062b6f;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-section img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .text {
+      max-width: 600px;
+    }
+
+    .why-choose-us .features,
+    .our-services .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .feature, .service {
+      background-color: #e6f0ff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      transition: 0.3s;
+    }
+
+    .feature:hover, .service:hover {
+      background-color: #d4e4ff;
+    }
+
+    .featured-properties .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .property-card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .property-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .view-all {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: bold;
+      color: #0b3d91;
+      text-decoration: none;
+    }
+
+    .client-reviews .reviews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .review {
+      background-color: #e6f0ff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 500px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .stars i {
+      color: gold;
+      font-size: 1.2rem;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0b3d91;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Tejas Providing Space</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="contact-number">Call: +91-9811844412</div>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Find Your Dream Property in Delhi</h1>
+    <p>Your trusted partner in real estate since 2018</p>
+    <div>
+      <a href="#properties" class="btn btn-outline">View Properties</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <img src="c:\Users\adity\Downloads\04.jpg" alt="About Us">
+    <div class="text">
+      <h2>Welcome to Tejas Providing Space</h2>
+      <p>We specialize in connecting people with their ideal properties. Whether you're looking to buy, sell, or rent, our experienced team ensures a smooth and satisfying experience from start to finish.</p>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-briefcase fa-2x"></i>
+        <h3>10+ Years Experience</h3>
+        <p>Decade-long trust and expertise in the real estate industry.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt fa-2x"></i>
+        <h3>Verified Properties</h3>
+        <p>All listings are verified and authenticated for a safe experience.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-handshake fa-2x"></i>
+        <h3>End-to-End Support</h3>
+        <p>We guide you through every step, from search to possession.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Buy a Home</h3>
+        <p>Browse our verified listings and find your dream home today.</p>
+      </div>
+      <div class="service">
+        <h3>Sell a Property</h3>
+        <p>We help homeowners sell their property faster and at the best price.</p>
+      </div>
+      <div class="service">
+        <h3>Rent a Property</h3>
+        <p>Find budget-friendly rental options in your preferred locations.</p>
+      </div>
+      <div class="service">
+        <h3>Property Management</h3>
+        <p>Professional management services to care for your real estate investments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-properties" id="properties">
+    <h2>Featured Properties</h2>
+    <div class="categories">
+      <div class="property-card">
+        <img src="c:\Users\adity\Downloads\01.jpeg" alt="Flat Image">
+        <h3>2BHK Flat in Janakpuri</h3>
+        <p>₹65 Lakhs | 950 sq.ft | Near Metro Station</p>
+        <button class="btn">View Details</button>
+      </div>
+      <div class="property-card">
+        <img src="c:\Users\adity\Downloads\02.jpeg" alt="Flat Image">
+        <h3>3BHK Builder Floor in Uttam Nagar</h3>
+        <p>₹85 Lakhs | 1250 sq.ft | Park Facing</p>
+        <button class="btn">View Details</button>
+      </div>
+      <div class="property-card">
+        <img src="c:\Users\adity\Downloads\1 bhk.jpg" alt="Flat Image">
+        <h3>1BHK in Dwarka Mor</h3>
+        <p>₹35 Lakhs | 650 sq.ft | Near Market</p>
+        <button class="btn">View Details</button>
+      </div>
+    </div>
+    <a href="#" class="view-all">View All Properties</a>
+  </section>
+
+  <section class="client-reviews">
+    <h2>Client Reviews</h2>
+    <div class="reviews">
+      <div class="review">
+        <p>“Great experience! Found the perfect home without any hassle.”</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>- Rahul Verma</p>
+      </div>
+      <div class="review">
+        <p>“Professional service and trustworthy team. Highly recommend.”</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>- Priya Sharma</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> A-20, Anand Vihar, Uttam Nagar West, near Holy Convent School, New Delhi - 110059</p>
+      <p><i class="fas fa-phone"></i> +91-9811844412</p>
+      <p><i class="fas fa-envelope"></i> contact@tejasprovidingspace@gmail.com</p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=A-20,+Anand+Vihar,+Uttam+Nagar+West,+near+Holy+Convent+School,+New+Delhi+-+110059&output=embed" width="100%" height="300" style="border:0; border-radius:10px; margin-top:1rem;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tejas Providing Space. All rights reserved.</p>
+  </footer>
+</body>
+</html>
